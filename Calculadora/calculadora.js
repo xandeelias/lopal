@@ -1,6 +1,6 @@
 function calculadora(){
     while(true){
-        let resultado =;
+        let resultado = 0.0;
         let operando1;
         let operando2;  
         let operador;
@@ -16,15 +16,16 @@ function calculadora(){
         } else if (operador === "*"){
         resultado = operando1 * operando2;
         } else if (operador === "/"){
-            if (operando2 == 0)
-                alert("Não é Possivél a Conta")
+            if (operando2 == 0){
+                alert("Não é Possível Fazer Esta Divisão");
                 return
+            }
         resultado = operando1 / operando2;
         } else {
             alert("Operador Invalído")
             return
         }
         alert("Resultado: " + 
-            operando1 + " " + operador + " " + operando2 + " = " + resultado)
+            operando1 + " " + operador + " " + operando2 + " = " + resultado);
     }
 }
