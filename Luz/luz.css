@@ -1,0 +1,10 @@
+h2, p, button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+img{
+    display: block;
+    margin: 0 auto;
+}
